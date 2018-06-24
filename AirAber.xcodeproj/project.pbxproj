@@ -14,6 +14,7 @@
 		1480D7F820E03AE000426646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1480D7F720E03AE000426646 /* Assets.xcassets */; };
 		1480D7FC20E03AE000426646 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1480D7E220E03ADF00426646 /* Watch.app */; };
 		1480D80520E03B6400426646 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80420E03B6400426646 /* InterfaceController.swift */; };
+		1480D80720E03DFD00426646 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80620E03DFD00426646 /* TimePicker.swift */; };
 		1800B8711FC1E26C00855EEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800B8701FC1E26C00855EEC /* LaunchScreen.xib */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 		1480D7F720E03AE000426646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1480D7F920E03AE000426646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1480D80420E03B6400426646 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1480D80620E03DFD00426646 /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		1800B8701FC1E26C00855EEC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		40113A891F5A4F760089A5C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B8FA2391B72275A00B1E765 /* AirAber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAber.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1480D7E420E03ADF00426646 /* Interface.storyboard */,
+				1480D80620E03DFD00426646 /* TimePicker.swift */,
 				1480D7E720E03ADF00426646 /* Assets.xcassets */,
 				1480D7E920E03ADF00426646 /* Info.plist */,
 			);
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1480D80720E03DFD00426646 /* TimePicker.swift in Sources */,
 				7B8FA2801B724A9900B1E765 /* Flight.swift in Sources */,
 				7B8FA28D1B72893300B1E765 /* UIImageViewExtension.swift in Sources */,
 				7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */,

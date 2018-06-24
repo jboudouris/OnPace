@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BGG-S3-Jgh">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,14 +10,58 @@
     </dependencies>
     <scenes>
         <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <scene sceneID="xUl-F8-sWV">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                <controller id="BGG-S3-Jgh">
                     <items>
-                        <label alignment="left" text="Label" id="Pf6-vE-rAE"/>
+                        <button width="1" alignment="left" title="Change Pace" id="A8Q-GD-ruC">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="modal" id="stA-vC-lmM"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="left" text="10:00" textAlignment="center" id="rVJ-nG-8WS">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="1" alignment="left" title="Start Run" id="qVY-Bx-Rr9">
+                            <connections>
+                                <segue destination="HX7-W0-xiG" kind="modal" id="uDF-L4-NTS"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="4" y="15"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="X69-Yh-AMJ">
+            <objects>
+                <controller id="HX7-W0-xiG">
+                    <items>
+                        <label alignment="left" text="Pace: 8:52" id="Suk-1k-bsv"/>
+                        <label alignment="left" text="Time: 8:52" id="mea-E9-upS"/>
+                        <label alignment="left" text="Distance: 0.51mi" id="glr-7p-GXL"/>
+                        <button width="1" alignment="left" title="End Run" id="Kpq-Cx-y6w"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="4" y="361"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc">
+                    <items>
+                        <group width="65" height="100" alignment="left" id="7P8-WJ-04D">
+                            <items>
+                                <picker width="1" height="1" alignment="left" id="b7U-aJ-F3k"/>
+                                <picker width="1" height="1" alignment="left" id="s5q-r7-g8c"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Set Mile Pace" id="RVy-ZN-OAw"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="252" y="15"/>
         </scene>
     </scenes>
 </document>
