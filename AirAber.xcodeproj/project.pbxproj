@@ -14,7 +14,7 @@
 		1480D7F820E03AE000426646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1480D7F720E03AE000426646 /* Assets.xcassets */; };
 		1480D7FC20E03AE000426646 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1480D7E220E03ADF00426646 /* Watch.app */; };
 		1480D80520E03B6400426646 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80420E03B6400426646 /* InterfaceController.swift */; };
-		1480D80720E03DFD00426646 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80620E03DFD00426646 /* TimePicker.swift */; };
+		1480D80820E043B000426646 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80620E03DFD00426646 /* TimePicker.swift */; };
 		1800B8711FC1E26C00855EEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800B8701FC1E26C00855EEC /* LaunchScreen.xib */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
@@ -115,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				1480D7E420E03ADF00426646 /* Interface.storyboard */,
-				1480D80620E03DFD00426646 /* TimePicker.swift */,
 				1480D7E720E03ADF00426646 /* Assets.xcassets */,
 				1480D7E920E03ADF00426646 /* Info.plist */,
 			);
@@ -125,6 +124,7 @@
 		1480D7F220E03AE000426646 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1480D80620E03DFD00426646 /* TimePicker.swift */,
 				1480D80420E03B6400426646 /* InterfaceController.swift */,
 				1480D7F520E03AE000426646 /* ExtensionDelegate.swift */,
 				1480D7F720E03AE000426646 /* Assets.xcassets */,
@@ -335,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1480D80820E043B000426646 /* TimePicker.swift in Sources */,
 				1480D80520E03B6400426646 /* InterfaceController.swift in Sources */,
 				1480D7F620E03AE000426646 /* ExtensionDelegate.swift in Sources */,
 			);
@@ -344,7 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1480D80720E03DFD00426646 /* TimePicker.swift in Sources */,
 				7B8FA2801B724A9900B1E765 /* Flight.swift in Sources */,
 				7B8FA28D1B72893300B1E765 /* UIImageViewExtension.swift in Sources */,
 				7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */,

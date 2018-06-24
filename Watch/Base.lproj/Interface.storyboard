@@ -38,7 +38,12 @@
                 <controller id="HX7-W0-xiG">
                     <items>
                         <label alignment="left" text="Pace: 8:52" id="Suk-1k-bsv"/>
-                        <label alignment="left" text="Time: 8:52" id="mea-E9-upS"/>
+                        <group width="1" alignment="left" id="TOd-gh-fSQ">
+                            <items>
+                                <label alignment="left" text="Time - " id="mea-E9-upS"/>
+                                <timer width="55" alignment="left" id="bSr-qO-PyD"/>
+                            </items>
+                        </group>
                         <label alignment="left" text="Distance: 0.51mi" id="glr-7p-GXL"/>
                         <button width="1" alignment="left" title="End Run" id="Kpq-Cx-y6w"/>
                     </items>
@@ -46,19 +51,32 @@
             </objects>
             <point key="canvasLocation" x="4" y="361"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Time Picker-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc">
+                <controller id="AgC-eL-Hgc" customClass="TimePicker" customModule="Watch_Extension">
                     <items>
                         <group width="65" height="100" alignment="left" id="7P8-WJ-04D">
                             <items>
-                                <picker width="1" height="1" alignment="left" id="b7U-aJ-F3k"/>
+                                <picker width="1" height="1" alignment="left" id="b7U-aJ-F3k">
+                                    <connections>
+                                        <action selector="pickerChanged:" destination="AgC-eL-Hgc" id="Ogs-0z-kIo"/>
+                                    </connections>
+                                </picker>
                                 <picker width="1" height="1" alignment="left" id="s5q-r7-g8c"/>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Set Mile Pace" id="RVy-ZN-OAw"/>
+                        <button width="1" alignment="left" title="Set Mile Pace" id="RVy-ZN-OAw">
+                            <connections>
+                                <action selector="setPressed" destination="AgC-eL-Hgc" id="9Sp-Rz-7rn"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="minutePicker" destination="b7U-aJ-F3k" id="pO1-Dl-9OM"/>
+                        <outlet property="secondPicker" destination="s5q-r7-g8c" id="5Jt-RS-iLQ"/>
+                        <outlet property="setButton" destination="RVy-ZN-OAw" id="4WD-O4-5Vu"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="252" y="15"/>
