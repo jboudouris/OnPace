@@ -41,7 +41,6 @@ class TimePicker : WKInterfaceController {
     func makePickerItem(num: Int) -> WKPickerItem {
         let item = WKPickerItem()
         item.title = String(num)
-        
         return item
     }
     
