@@ -17,6 +17,8 @@
 		1480D80820E043B000426646 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80620E03DFD00426646 /* TimePicker.swift */; };
 		1480D80A20E047F400426646 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480D80920E047F400426646 /* Home.swift */; };
 		1800B8711FC1E26C00855EEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800B8701FC1E26C00855EEC /* LaunchScreen.xib */; };
+		743D783D20E04C350087B936 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743D783C20E04C350087B936 /* LocationManager.swift */; };
+		743D783F20E04DAC0087B936 /* RunDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743D783E20E04DAC0087B936 /* RunDisplay.swift */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
 		7B8FA2421B72275A00B1E765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8FA2401B72275A00B1E765 /* Main.storyboard */; };
@@ -83,6 +85,8 @@
 		1480D80920E047F400426646 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1800B8701FC1E26C00855EEC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		40113A891F5A4F760089A5C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		743D783C20E04C350087B936 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		743D783E20E04DAC0087B936 /* RunDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDisplay.swift; sourceTree = "<group>"; };
 		7B8FA2391B72275A00B1E765 /* AirAber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8FA23E1B72275A00B1E765 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,11 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				1480D80620E03DFD00426646 /* TimePicker.swift */,
+				743D783C20E04C350087B936 /* LocationManager.swift */,
 				1480D80920E047F400426646 /* Home.swift */,
 				1480D80420E03B6400426646 /* InterfaceController.swift */,
 				1480D7F520E03AE000426646 /* ExtensionDelegate.swift */,
 				1480D7F720E03AE000426646 /* Assets.xcassets */,
 				1480D7F920E03AE000426646 /* Info.plist */,
+				743D783E20E04DAC0087B936 /* RunDisplay.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -279,6 +285,11 @@
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -340,6 +351,8 @@
 			files = (
 				1480D80820E043B000426646 /* TimePicker.swift in Sources */,
 				1480D80520E03B6400426646 /* InterfaceController.swift in Sources */,
+				743D783F20E04DAC0087B936 /* RunDisplay.swift in Sources */,
+				743D783D20E04C350087B936 /* LocationManager.swift in Sources */,
 				1480D80A20E047F400426646 /* Home.swift in Sources */,
 				1480D7F620E03AE000426646 /* ExtensionDelegate.swift in Sources */,
 			);

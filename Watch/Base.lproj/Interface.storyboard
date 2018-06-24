@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="4" y="15"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Run Display-->
         <scene sceneID="X69-Yh-AMJ">
             <objects>
-                <controller id="HX7-W0-xiG">
+                <controller id="HX7-W0-xiG" customClass="RunDisplay" customModule="Watch_Extension">
                     <items>
                         <label alignment="left" text="Pace: 8:52" id="Suk-1k-bsv"/>
                         <group width="1" alignment="left" id="TOd-gh-fSQ">
