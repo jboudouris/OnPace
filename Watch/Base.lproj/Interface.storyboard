@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Home-->
         <scene sceneID="xUl-F8-sWV">
             <objects>
-                <controller id="BGG-S3-Jgh">
+                <controller id="BGG-S3-Jgh" customClass="Home" customModule="Watch_Extension">
                     <items>
                         <button width="1" alignment="left" title="Change Pace" id="A8Q-GD-ruC">
                             <connections>
@@ -28,6 +28,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="paceLabel" destination="rVJ-nG-8WS" id="2a7-dj-Qba"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="4" y="15"/>
@@ -56,14 +59,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="TimePicker" customModule="Watch_Extension">
                     <items>
-                        <group width="65" height="100" alignment="left" id="7P8-WJ-04D">
+                        <group width="120" height="100" alignment="left" id="7P8-WJ-04D">
                             <items>
-                                <picker width="1" height="1" alignment="left" id="b7U-aJ-F3k">
+                                <picker width="60" height="1" alignment="left" id="b7U-aJ-F3k">
                                     <connections>
                                         <action selector="pickerChanged:" destination="AgC-eL-Hgc" id="Ogs-0z-kIo"/>
                                     </connections>
                                 </picker>
-                                <picker width="1" height="1" alignment="left" id="s5q-r7-g8c"/>
+                                <picker width="60" height="1" alignment="left" id="s5q-r7-g8c">
+                                    <connections>
+                                        <action selector="secondPickerChanged:" destination="AgC-eL-Hgc" id="ag0-Bd-Dz8"/>
+                                    </connections>
+                                </picker>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Set Mile Pace" id="RVy-ZN-OAw">

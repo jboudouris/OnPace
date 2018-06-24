@@ -30,12 +30,12 @@ class TimePicker : WKInterfaceController {
         
         minutePicker.setItems(items)
         
-        items.removeAll()
-        for i in 0...10 {
-            items.append(makePickerItem(num: i))
+        var secondItems = [WKPickerItem]()
+        for i in 0...59 {
+            secondItems.append(makePickerItem(num: i))
         }
         
-        secondPicker.setItems(items)
+        secondPicker.setItems(secondItems)
     }
     
     func makePickerItem(num: Int) -> WKPickerItem {
@@ -50,6 +50,11 @@ class TimePicker : WKInterfaceController {
     }
     
     @IBAction func pickerChanged(_ value: Int) {
+				UserDefaults.standard.set(value, forKey: "minutes")
     }
-    
+	
+	@IBAction func secondPickerChanged(_ value: Int) {
+		UserDefaults.standard.set(value, forKey: "seconds")
+	}
+	
 }
